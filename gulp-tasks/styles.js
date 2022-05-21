@@ -23,7 +23,7 @@ gulp.task("styles", () => {
     return gulp.src(paths.styles.src)
         .pipe(gulpif(!production, sourcemaps.init()))
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass().on("error", sass.logError))
         .pipe(groupmedia())
         .pipe(gulpif(production, autoprefixer({
             cascade: false,

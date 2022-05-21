@@ -1,4 +1,46 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Metropolis';
+    font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 $paddingContainer;
+}
+
+@media (min-width: 575.98px) {
+  .container {
+    padding: 0 calc(50vw - 270px);
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    padding: 0 calc(50vw - (360px - $paddingContainerDiff));
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    padding: 0 calc(50vw - (480px - $paddingContainerDiff));
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    padding: 0 calc(50vw - (590px - $paddingContainerDiff));
+  }
 }

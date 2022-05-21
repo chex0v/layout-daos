@@ -1,0 +1,36 @@
+.trusted {
+  background: #faf9fa;
+  padding: 50px 0;
+  margin-top: 110px;
+
+  // .trusted__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: $primary;
+  }
+
+  // .trusted__sponsors
+
+  &__sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px 65px;
+    justify-content: center;
+    margin-top: 46px;
+  }
+
+  // .trusted__item
+
+  &__item {
+  }
+
+  // .trusted__image
+
+  &__image {
+  }
+}

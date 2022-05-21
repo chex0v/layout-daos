@@ -1,0 +1,167 @@
+.central {
+  padding: 100px 0 196px 0;
+  position: relative;
+
+  @media (max-width: $breakPoint768) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: $breakPoint768) {
+    padding-bottom: 350px;
+  }
+
+  // .central__image
+
+  &__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 880px;
+    width: 100%;
+    z-index: -1;
+    @media (max-width: $breakPoint1200) {
+      max-width: 600px;
+    }
+
+    @media (max-width: $breakPoint992) {
+      max-width: 425px;
+    }
+
+    @media (max-width: $breakPoint768) {
+      top: unset;
+      bottom: 0;
+    }
+  }
+
+  // .central_header
+
+  &_header {
+    @media (max-width: $breakPoint1200) {
+      max-width: 364px;
+    }
+  }
+
+  // .central__wrapper
+
+  &__wrapper {
+  }
+
+  // .central__title
+
+  &__title {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    max-width: 387px;
+    line-height: 62px;
+    @media (max-width: $breakPoint768) {
+      font-size: 36px;
+      line-height: 45px;
+    }
+  }
+
+  // .central__subtitle
+
+  &__subtitle {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9998a4;
+    line-height: 24px;
+    margin-top: 16px;
+  }
+
+  // .central__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    margin-top: 62px;
+    @media (max-width: $breakPoint768) {
+      gap: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  // .central__link
+
+  &__link {
+    display: inline-block;
+  }
+}
+
+.statistic {
+  // .statistic__header
+
+  margin-top: 130px;
+
+  @media (max-width: $breakPoint768) {
+    margin-top: 70px;
+  }
+
+  &__header {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $secondaryLight;
+    text-transform: uppercase;
+    @media (max-width: $breakPoint320) {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  // .statistic__items
+
+  &__items {
+    list-style: none;
+    margin-top: 25px;
+    display: flex;
+    gap: 80px;
+    @media (max-width: $breakPoint768) {
+      gap: 40px;
+    }
+    @media (max-width: $breakPoint320) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  // .statistic__item
+
+  &__item {
+    // .statistic__item_header
+    &_header {
+      font-family: "Metropolis";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      color: $primary;
+      @media (max-width: $breakPoint768) {
+        font-size: 28px;
+      }
+      @media (max-width: $breakPoint576) {
+        font-size: 18px;
+      }
+      @media (max-width: $breakPoint320) {
+        font-size: 36px;
+      }
+    }
+  }
+
+  // .statistic__description
+
+  &__description {
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+}
