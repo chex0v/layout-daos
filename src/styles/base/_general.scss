@@ -44,3 +44,6 @@ a {
     padding: 0 calc(50vw - (590px - $paddingContainerDiff));
   }
 }
+.--hide {
+  display: none;
+}
